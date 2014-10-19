@@ -206,6 +206,14 @@ Objetivo: Crear las paginas estáticas de la aplicación
 
 - git status
 
+- Ir a github y crear el repositorio
+
+- Subir los cambios con:
+
+> git remote add origin git@github.com:munozfj/weight-agent.git
+>
+> git push -u origin master
+
 
 
 
