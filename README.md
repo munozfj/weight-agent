@@ -198,18 +198,18 @@ Objetivo: Crear las paginas estáticas de la aplicación
 >
 > }
 
-- git init
-
-- git add -A
-
-- git commit -m "Commit inicial"
-
-- git status
-
 - Ir a github y crear el repositorio
 
 - Subir los cambios con:
 
+> git init
+>
+> git add -A
+>
+> git commit -m "Commit inicial"
+>
+> git status
+>
 > git remote add origin git@github.com:munozfj/weight-agent.git
 >
 > git push -u origin master
