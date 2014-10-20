@@ -214,14 +214,10 @@ Objetivo: Crear las paginas estáticas de la aplicación
 >
 > git push -u origin master
 
-
-
-
-
 - - -
-#### Fecha: 
+#### Fecha: 20/10/2014
 
-Objetivo: 
+Objetivo: Hacer un lindo titulo para las páginas
 
-1) 
+-
 

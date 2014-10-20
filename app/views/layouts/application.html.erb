@@ -13,32 +13,29 @@
 
     <%= render 'shared/shim' %>
 
+    <!-- External Fonts -->
+    <script src="//use.edgefonts.net/sirin-stencil.js"></script>
+    <script src="//use.edgefonts.net/miama.js"></script>
+
   </head>
   <body>
   <div class="container">
  
       <%= render 'shared/navigation' %>
 
-
-
-       
-
-       <div class="jumbotron">
-
-
+      <div class="jumbotron">
         <%= render 'shared/messages' %>
-       <%= yield %>
+        <%= yield %>
 
-       
+        <br>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
- 
-    </div>
-       <!-- %= debug(params) if Rails.env.development? % -->
+      </div>
+      <!-- %= debug(params) if Rails.env.development? % -->
   </div>
 
-    <%= render 'shared/footer' %>
+  <%= render 'shared/footer' %>
 
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
   </body>
 </html>
