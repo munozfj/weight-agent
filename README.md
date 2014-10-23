@@ -162,10 +162,6 @@ Objetivo: Crear las paginas estáticas de la aplicación
 
 - rails s
 
-- En el archivo .gitignore agregar
-
-> secrets.yml
-
 - Se crearan en /views/shared los siguientes partials:
 
 > _footer.html.erb
@@ -213,6 +209,22 @@ Objetivo: Crear las paginas estáticas de la aplicación
 > git remote add origin git@github.com:munozfj/weight-agent.git
 >
 > git push -u origin master
+
+- Para publicar en heroku hacer
+
+> RAILS_ENV=production rake assets:precompile
+>
+> heroku create
+>
+> git push heroku master
+>
+> heroku config:set SECRET_KEY_BASE=`ruby -rsecurerandom -e "puts SecureRandom.hex(64)"`
+> 
+> heroku apps:rename weight-agent
+> 
+> heroku logs
+>
+> heroku open
 
 - - -
 #### Fecha: 20/10/2014
