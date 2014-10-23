@@ -227,9 +227,40 @@ Objetivo: Crear las paginas estáticas de la aplicación
 > heroku open
 
 - - -
-#### Fecha: 20/10/2014
+#### Fecha: 23/10/2014
 
 Objetivo: Hacer un lindo titulo para las páginas
 
--
+- En /app/helpers/application_helper.rb creamos el metodo:
+
+> def page_title(title = nil)
+>
+>    base="Weight Tracker"
+>
+>    if title
+>
+>      content_for(:page_title) { base + ' - ' + title }
+>
+>    else
+>
+>      content_for?(:page_title) ? content_for(:page_title) : base
+>
+>    end
+>
+>  end
+
+- Modificar /app/views/application.html.erb para que utilice el metodo page_title
+
+> <title>  <%= page_title %> </title>
+
+- En /app/views al principio de cada pagina colocar el nombre de la misma, haciendo:
+
+> <% page_title "subtitulo" %>
+
+- - -
+#### Fecha: 23/10/2014
+
+Objetivo: Autenticación de paginas
+
+
 
